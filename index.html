@@ -4,6 +4,15 @@
     <title>
         sonam
     </title>
+    <script>
+        window.onload = function () {
+            // your page initialization code here
+            // the DOM will be available here
+            console.log(document.getElementById("text").innerHTML);
+            document.getElementById("text").innerHTML = "I m learning html";
+        };
+
+    </script>
 </head>
 
 <body>
@@ -11,7 +20,7 @@
     <h4><a href="https://www.google.com" target="_blank">Sample header</a></h4>
     <img src="logo.png" alt="google logo" />
     <p> This is Sonam!</p><br />
-    <p>How are you?</p>
+    <p id="text">How are you?</p>
 </body>
 
 </html>

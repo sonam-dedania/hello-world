@@ -1,59 +1,843 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>
-        sonam
-    </title>
-    <script>
-        window.onload = function () {
-            // your page initialization code here
-            // the DOM will be available here
-            console.log(document.getElementById("text").innerHTML);
-            document.getElementById("text").innerHTML = "I m learning html";
-        };
-
-    </script>
-    <style>
-        p.s1 {
-            color: red;
-            padding: 10px;
-            margin: 10px;
-        }
-    </style>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="sample1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <h4><a href="https://www.google.com" target="_blank">Sample header</a></h4>
-    <img src="logo.png" alt="google logo" />
-    <hr>
-    <p style="color:green; font-family: verdana; text-align:center; font-style:italic; font-size:30px;"> This is Sonam!
-    </p><br />
-    <p id="text" title="hello there's">How are you?</p>
-    <p class="s1"><b>Dipen</b></p>
-    <p><strong>Dipen</strong></p>
-    <pre>
-        My Bonnie lies over the ocean.
+    <div class="header">
+        <header>
+            <div class="container">
+                <h1 class="white">ARSHA</h1>
+            </div>
+            <nav class="navbar navbar-default">
+                <ul>
+                    <li class="active">Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Portfolio</li>
+                    <li>Team</li>
+                    <li>Drop Down</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <button class="btn cta-btn">
+                Get Started
+            </button>
+        </header>
+        <div class="container">
 
-        My Bonnie lies over the sea.
+            <div class="row">
+                <div class="header1 col-lg-6 col-md-6">
+                    <h1>Better Solutions For Your Business</h1>
+                    <h2 class="h2p">We are team of talanted designers making websites with Bootstrap</h2>
 
-        My Bonnie lies over the ocean.
+                    <div class="button-container">
+                        <button class="btn b1">Get Started</button>
+                        <i class="fa fa-play-circle-o b2"> Watch Video</i>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="hero-img.png" class="img-fluid" alt="hero-img.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="container">
+            <div class="row">
 
-        Oh, bring back my Bonnie to me.
-    </pre>
-    <hr>
-    <p>Here is a quote from WWF's website:</p>
-    <blockquote cite="http://www.worldwildlife.org/who/index.html">
-        For 50 years, WWF has been protecting the future of nature.
-        The world's leading conservation organization,
-        WWF works in 100 countries and is supported by
-        1.2 million members in the United States and
-        close to 5 million globally.
-    </blockquote>
-    <!--text comment-->
-    <p style="color:#ea24ea;">WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+                <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <img class="img-fluid img1"
+                        src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-1.png" />
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <img class="img-fluid img1"
+                        src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-2.png" />
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <img class="img-fluid img1"
+                        src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-3.png" />
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <img class="img-fluid img1"
+                        src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-4.png" />
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <img class="img-fluid img1"
+                        src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-5.png" />
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-6">
+                    <img class="img-fluid img1"
+                        src="https://bootstrapmade.com/demo/templates/Arsha/assets/img/clients/client-6.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us-div">
+        <div class="container">
+
+            <h1 class="about-us">About us</h1>
+            <div>
+                <div class="hr-div">
+
+                </div>
+            </div>
+
+            <hr class="about-hr" />
+
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.
+
+                    <ul>
+                        <li><i class="ri-check-double-line"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        </li>
+                        <li><i class="ri-check-double-line"></i>Duis aute irure dolor in reprehenderit in voluptate
+                            velit</li>
+                        <li><i class="ri-check-double-line"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <br />
+                    <button class="btn b3">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle1">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <h1 class="header2">Eum ipsam laborum deleniti <span class="bold">velit pariatur architecto aut
+                            nihil</span></h1>
+
+                    <p class="gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default faq-panel">
+                            <div class="panel-heading faq-heading">
+                                <h4 class="panel-title faq-title">
+                                    <a data-toggle="collapse" href="#collapse1" data-parent="#accordion"><span
+                                            class="bold sky-blue">01</span>
+                                        Non
+                                        consectetur a erat nam at lectus
+                                        urna duis?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse">
+                                <div class="panel-body faq-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis
+                                    urna id
+                                    volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default faq-panel">
+                            <div class="panel-heading faq-heading">
+                                <h4 class="panel-title faq-title">
+                                    <a data-toggle="collapse" href="#collapse2" data-parent="#accordion"><span
+                                            class="bold sky-blue">02</span>
+                                        Non
+                                        consectetur a erat nam at lectus
+                                        urna duis?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body faq-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis
+                                    urna id
+                                    volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default faq-panel">
+                            <div class="panel-heading faq-heading">
+                                <h4 class="panel-title faq-title">
+                                    <a data-toggle="collapse" href="#collapse3" data-parent="#accordion"><span
+                                            class="bold sky-blue">03</span>
+                                        Non
+                                        consectetur a erat nam at lectus
+                                        urna duis?</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body faq-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis
+                                    urna id
+                                    volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                                    porttitor rhoncus dolor purus non.</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="hero-img.png" class="img-fluid" alt="hero-img.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle2">
+        <div class="container">
+
+            <div class="row d-flex">
+                <div class="col-lg-6 d-flex col-md-6">
+                    <img src="skills.png" class="img-fluid" alt="skills.png" />
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h1 class="header3">Voluptatem dignissimos provident quasi corporis voluptates</h1>
+
+                    <p class="italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua.</p>
+
+                    <div class="skill-label">
+                        <p class="label-left">HTML</p>
+                        <p class="label-right">100%</p>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar skill-progressbar" role="progressbar" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100" style="width:100%">
+
+                        </div>
+                    </div>
+
+                    <div class="skill-label">
+                        <p class="label-left">CSS</p>
+                        <p class="label-right">90%</p>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar skill-progressbar" role="progressbar" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100" style="width:90%">
+
+                        </div>
+                    </div>
+
+                    <div class="skill-label">
+                        <p class="label-left">JAVASCRIPT</p>
+                        <p class="label-right">75%</p>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar skill-progressbar" role="progressbar" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100" style="width:75%">
+
+                        </div>
+                    </div>
+
+                    <div class="skill-label">
+                        <p class="label-left">PHOTOSHOP</p>
+                        <p class="label-right">55%</p>
+                    </div>
+                    <div class="progress skill-progress">
+                        <div class="progress-bar skill-progressbar" role="progressbar" aria-valuenow="55"
+                            aria-valuemin="0" aria-valuemax="100" style="width:55%">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us-div middle1">
+        <div class="container">
+
+            <h1 class="about-us">services</h1>
+            <div>
+                <div class="hr-div">
+                </div>
+            </div>
+
+            <hr class="about-hr" />
+
+            <p class="center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit in iste officiis commodi quidem hic quas.</p>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="bck-white">
+                            <i class="fa fa-futbol-o b3" aria-hidden="true"></i>
+                            <h3 class="dark-blue bold">Lorem Ipsum</h3>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="bck-white">
+                            <i class="fa fa-file-text-o b3" aria-hidden="true"></i>
+                            <h3 class="dark-blue bold">Sed ut perspici</h3>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="bck-white"><i class="fa fa-file-text-o b3" aria-hidden="true"></i>
+                            <h3 class="dark-blue bold">Magni Dolores</h3>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="bck-white"><i class="fa fa-file-text-o b3" aria-hidden="true"></i>
+                            <h3 class="dark-blue bold">Nemo Enim</h3>
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="middle3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h3 class="h3-cta">Call To Action</h3>
+                    <p class="h3-cta">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia
+                        deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-lg-6 col-md-12">
+
+                    <button class="btn cta-btn">
+                        Call To Action
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-div middle4">
+        <h1 class="about-us">portfolio</h1>
+        <div>
+            <div class="hr-div">
+            </div>
+        </div>
+
+        <hr class="about-hr" />
+
+        <p class="center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+            quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+
+
+        <div class="porfolio-button">
+            <button class="btn b4">All</button>
+            <button class="btn portfolio-app-btn">App</button>
+            <button class="btn portfolio-app-btn">Card</button>
+            <button class="btn portfolio-app-btn">Web</button>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="parent">
+                        <div class="portfolio-container">
+                            <img src="portfolio-1.jpg" alt="portfolio-1.jpg" class="porfolio-img" />
+                            <div class="portfolio-overlay">
+                                <h4>App 1</h4>
+                                <p>App</p>
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="portfolio-2.jpg" alt="portfolio-2.jpg" class="porfolio-img" />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="portfolio-3.jpg" alt="portfolio-3.jpg" class="porfolio-img" />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="portfolio-4.jpg" alt="portfolio-4.jpg" class="porfolio-img" />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="portfolio-6.jpg" alt="portfolio-6.jpg" class="porfolio-img" />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="portfolio-5.jpg" alt="portfolio-5.jpg" class="porfolio-img" />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="portfolio-7.jpg" alt="portfolio-7.jpg" class="porfolio-img" />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="portfolio-8.jpg" alt="portfolio-8.jpg" class="porfolio-img" />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="portfolio-9.jpg" alt="portfolio-9.jpg" class="porfolio-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about-us-div middle1">
+        <div class="container">
+
+            <h1 class="about-us">team</h1>
+            <div>
+                <div class="hr-div">
+                </div>
+            </div>
+
+            <hr class="about-hr" />
+
+            <p class="center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="bck-white1">
+                        <div class="team-img-div">
+                            <img src="team-1.jpg" alt="team-1.jpg" class="team-img" />
+                        </div>
+                        <div class="team-div">
+                            <h4 class="dark-blue bold">Walter White</h4>
+                            <p>Chief Executive Officer</p>
+                            <hr class="team-hr" align="left" />
+                            <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                            <div class="social-icon">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="bck-white1">
+                        <div class="team-img-div">
+                            <img src="team-2.jpg" alt="team-2.jpg" class="team-img" />
+                        </div>
+                        <div class="team-div">
+                            <h4 class="dark-blue bold">Sarah Jhonson</h4>
+                            <p>Product Manager</p>
+                            <hr class="team-hr" align="left" />
+                            <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                            <div class="social-icon">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="bck-white1">
+                        <div class="team-img-div">
+                            <img src="team-3.jpg" alt="team-3.jpg" class="team-img" />
+                        </div>
+                        <div class="team-div">
+                            <h4 class="dark-blue bold">William Anderson</h4>
+                            <p>CTO</p>
+                            <hr class="team-hr" align="left" />
+                            <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                            <div class="social-icon">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                    <div class="bck-white1">
+                        <div class="team-img-div">
+                            <img src="team-4.jpg" alt="team-4.jpg" class="team-img" />
+                        </div>
+                        <div class="team-div">
+                            <h4 class="dark-blue bold">Amanda Jepson</h4>
+                            <p>Accountant</p>
+                            <hr class="team-hr" align="left" />
+                            <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                            <div class="social-icon">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-div middle4">
+        <h1 class="about-us">PRICING</h1>
+        <div>
+            <div class="hr-div">
+            </div>
+        </div>
+
+        <hr class="about-hr" />
+
+        <p class="center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="bck-white2">
+                        <h4 class="dark-blue">Free Plan</h4>
+                        <h1 class="dark-blue">$0</h1>
+                        <p class="sky-blue">per month</p>
+                        <ul class="simple">
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Quam adipiscing vitae proin</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Nec feugiat nisl pretium</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Nulla at volutpat diam uteera</li>
+                            <li class="gray"><i class="fa fa-times" aria-hidden="true"></i> <span
+                                    class="strike">Pharetra massa
+                                    massa ultricies</span></li>
+                            <li class="gray"><i class="fa fa-times" aria-hidden="true"></i> <span class="strike">Massa
+                                    ultricies mi
+                                    quis hendrerit</span></li>
+                        </ul>
+                        <button class="btn pricing-btn">Get Started</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="bck-white2-pricing">
+                        <h4 class="dark-blue">Business Plan</h4>
+                        <h1 class="dark-blue">$29</h1>
+                        <p class="sky-blue">per month</p>
+                        <ul class="simple">
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Quam adipiscing vitae proin</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Nec feugiat nisl pretium</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Nulla at volutpat diam uteera</li>
+                            <li><i class="fa fa-times" aria-hidden="true"></i> Pharetra massa massa ultricies</li>
+                            <li><i class="fa fa-times" aria-hidden="true"></i> Massa ultricies mi quis
+                                hendrerit</li>
+                        </ul>
+                        <button class="btn pricing-btn-active">Get Started</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-12">
+                    <div class="bck-white2">
+                        <h4 class="dark-blue">Developer Plan</h4>
+                        <h1 class="dark-blue">$49</h1>
+                        <p class="sky-blue">per month</p>
+                        <ul class="simple">
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Quam adipiscing vitae proin</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Nec feugiat nisl pretium</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i> Nulla at volutpat diam uteera</li>
+                            <li><i class="fa fa-times" aria-hidden="true"></i> Pharetra massa massa ultricies</li>
+                            <li><i class="fa fa-times" aria-hidden="true"></i> Massa ultricies mi quis
+                                hendrerit</li>
+                        </ul>
+                        <button class="btn pricing-btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us-div middle1">
+        <div class="container">
+
+            <h1 class="about-us">FREQUENTLY ASKED QUESTIONS</h1>
+            <div>
+                <div class="hr-div">
+                </div>
+            </div>
+
+            <hr class="about-hr" />
+
+            <p class="center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+            <div class="panel-group" id="accordion1">
+                <div class="panel panel-default faq-panel">
+                    <div class="panel-heading faq-heading">
+                        <h4 class="panel-title faq-title">
+                            <a data-toggle="collapse" href="#collapse1a" data-parent="#accordion1"><span
+                                    class="bold sky-blue"><i class="fa fa-question-circle-o"
+                                        aria-hidden="true"></i></span> <span class="dark-blue bold">Non
+                                    consectetur a erat nam at lectus urna duis?</span></a>
+                        </h4>
+                    </div>
+                    <div id="collapse1a" class="panel-collapse collapse">
+                        <div class="panel-body faq-body">Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+                            volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna
+                            porttitor rhoncus dolor purus non.</div>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default faq-panel">
+                    <div class="panel-heading faq-heading">
+                        <h4 class="panel-title faq-title">
+                            <a data-toggle="collapse" href="#collapse2a" data-parent="#accordion1"><span
+                                    class="bold sky-blue"><i class="fa fa-question-circle-o"
+                                        aria-hidden="true"></i></span>
+                                <span class="dark-blue bold">Feugiat scelerisque varius morbi enim nunc?</span></a>
+                        </h4>
+                    </div>
+                    <div id="collapse2a" class="panel-collapse collapse">
+                        <div class="panel-body faq-body">Dolor sit amet consectetur adipiscing elit pellentesque
+                            habitant morbi. Id interdum velit
+                            laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium.
+                            Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa
+                            tincidunt dui.</div>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default faq-panel">
+                    <div class="panel-heading faq-heading">
+                        <h4 class="panel-title faq-title">
+                            <a data-toggle="collapse" href="#collapse3a" data-parent="#accordion1"><span
+                                    class="bold sky-blue"><i class="fa fa-question-circle-o"
+                                        aria-hidden="true"></i></span>
+                                <span class="dark-blue bold">Dolor sit amet consectetur adipiscing elit?</span></a>
+                        </h4>
+                    </div>
+                    <div id="collapse3a" class="panel-collapse collapse">
+                        <div class="panel-body faq-body">
+                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar
+                            elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus
+                            pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at
+                            elementum eu facilisis sed odio morbi quis</div>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default faq-panel">
+                    <div class="panel-heading faq-heading">
+                        <h4 class="panel-title faq-title">
+                            <a data-toggle="collapse" href="#collapse4a" data-parent="#accordion1"><span
+                                    class="bold sky-blue"><i class="fa fa-question-circle-o"
+                                        aria-hidden="true"></i></span>
+                                <span class="dark-blue bold">Tempus quam pellentesque nec nam aliquam sem et tortor
+                                    consequat?</span></a>
+                        </h4>
+                    </div>
+                    <div id="collapse4a" class="panel-collapse collapse">
+                        <div class="panel-body faq-body">Molestie a iaculis at erat pellentesque adipiscing commodo.
+                            Dignissim suspendisse in est
+                            ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing
+                            bibendum est. Purus gravida quis blandit turpis cursus in.</div>
+
+                    </div>
+                </div>
+
+                <div class="panel panel-default faq-panel">
+                    <div class="panel-heading faq-heading">
+                        <h4 class="panel-title faq-title">
+                            <a data-toggle="collapse" href="#collapse5a" data-parent="#accordion1"><span
+                                    class="bold sky-blue"><i class="fa fa-question-circle-o"
+                                        aria-hidden="true"></i></span>
+                                <span class="dark-blue bold">Tortor vitae purus faucibus ornare. Varius vel pharetra vel
+                                    turpis nunc eget lorem dolor?</span></a>
+                        </h4>
+                    </div>
+                    <div id="collapse5a" class="panel-collapse collapse">
+                        <div class="panel-body faq-body">Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris
+                            vitae ultricies leo integer
+                            malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem
+                            dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="portfolio-div middle4">
+        <h1 class="about-us">CONTACT</h1>
+        <div>
+            <div class="hr-div">
+            </div>
+        </div>
+
+        <hr class="about-hr" />
+
+        <p class="center">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+            fugiat sit in iste officiis commodi quidem hic quas.</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="contact-box">
+                        <div class="contact-icon">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 class="dark-blue bold">Location:</h3>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 class="dark-blue bold">Email:</h3>
+                            <p>info@example.com</p>
+                        </div>
+                        <div class="contact-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3 class="dark-blue bold">Call:</h3>
+                            <p>+1 5589 55488 55s</p>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                            frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="contact-box">
+                        <form>
+                            <div class="row">
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="name">Your Name</label>
+                                    <input type="name" class="form-control" id="name">
+                                </div>
+                                <div class="form-group col-lg-6 col-md-6">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="subject" class="form-control" id="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="Message">Message</label>
+                                <textarea class="form-control" rows="10"></textarea>
+                            </div>
+                            <div class="center1">
+                                <button class="btn pricing-btn-active">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us-div middle1">
+        <div class="container">
+
+            <h3 class="bold dark-blue center">Join Our Newsletter</h3>
+
+            <p class="center">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <div class="form-div">
+                <form>
+                    <input type="email" name="email">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h2 class="dark-blue bold">ARSHA</h2>
+                    <p>A108 Adam Street</p>
+                    <p>New York, NY 535022</p>
+                    <p>United States</p><br />
+                    <p><span class="bold">Phone:</span> +1 5589 55488 55</p>
+                    <p><span class="bold">Email:</span> info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="dark-blue bold">Useful Links</h4>
+                    <ul class="simple">
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Home</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> About us</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Services</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Terms of service</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Privacy policy</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="dark-blue bold">Our Services</h4>
+                    <ul class="simple">
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Web Design</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Web Development</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Product Management</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Marketing</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Graphic Design</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <h4 class="dark-blue bold">Our Social Networks</h4>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                    <div class="social-icon">
+                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                        <i class="fa fa-skype" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="white">© Copyright <span class="bold">Arsha</span>. All Rights Reserved</p>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="footer1-right">
+                        <p><span class="white">Designed by</span> <span class="sky-blue">BootstrapMade</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--https://bootstrapmade.com/demo/Arsha/-->
 </body>
 
 </html>
